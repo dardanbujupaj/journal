@@ -1,0 +1,52 @@
+= journal
+Dardan Bujupaj
+2018-08-30
+
+== Installation
+TODO
+
+== Usage
+=== Create entry
+Create a new entry to the journal by typing `journal c <content>`.
+All text after `journal c` is used as content for the entry.
+
+=== List entries
+To list the latest five entries just type `journal`.
+
+You can change the amount of listed entries with the `-n` flag.
+`journal -n 2 l` lists the two latest entries.
+
+With the `-a` flag you can list all available entries.
+
+[source, bash]
+----
+server% journal c hello journal
+Journal entry saved.
+
+server% journal c second entry
+Journal entry saved.
+
+server% journal c 'with quotes i can also      
+quote> write entries
+quote> over multiple lines'
+Journal entry saved.
+
+server% journal -n 2     
+#2 - 2018-08-30T21:32:04Z
+second entry
+
+#3 - 2018-08-30T21:32:31Z
+with quotes i can also
+write entries
+over multiple lines
+----
+
+
+
+== Database
+Entries are stored in a sqlite database file in your home directory called `~/.journal.db`.
+If no db-file is present a new one will be created.
+
+WARN: If the `~/.journal.db` file is deleted, all your journal entries are gone.
+
+
