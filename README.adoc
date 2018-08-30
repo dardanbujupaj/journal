@@ -3,7 +3,12 @@ Dardan Bujupaj
 2018-08-30
 
 == Installation
-TODO
+
+[source, bash]
+----
+go get github.com/dardanbujupaj/journal
+go install github.com/dardanbujupaj/journal
+----
 
 == Usage
 === Create entry
@@ -20,18 +25,18 @@ With the `-a` flag you can list all available entries.
 
 [source, bash]
 ----
-server% journal c hello journal
+host% journal c hello journal
 Journal entry saved.
 
-server% journal c second entry
+host% journal c second entry
 Journal entry saved.
 
-server% journal c 'with quotes i can also      
+host% journal c 'with quotes i can also      
 quote> write entries
 quote> over multiple lines'
 Journal entry saved.
 
-server% journal -n 2     
+host% journal -n 2     
 #2 - 2018-08-30T21:32:04Z
 second entry
 
