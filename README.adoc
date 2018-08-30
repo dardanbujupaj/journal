@@ -47,6 +47,6 @@ over multiple lines
 Entries are stored in a sqlite database file in your home directory called `~/.journal.db`.
 If no db-file is present a new one will be created.
 
-WARN: If the `~/.journal.db` file is deleted, all your journal entries are gone.
+WARNING: If the `~/.journal.db` file is deleted, all your journal entries are gone.
 
 

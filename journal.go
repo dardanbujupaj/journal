@@ -4,7 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"strings"
-	"journal/entry"
+	"github.com/dardanbujupaj/journal/entry"
 )
 
 func main() {
